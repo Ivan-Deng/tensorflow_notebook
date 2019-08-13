@@ -7,7 +7,7 @@ BATCH_SIZE =30
 seed = 2
 STEPS = 40000
 
-rdm = np.random.seed(seed)
+rdm = np.random.RandomState(seed)
 X = rdm.randn(300,2)
 
 Y_ = [int (x0*x0 + x1*x1 <2) for (x0,x1) in X]
